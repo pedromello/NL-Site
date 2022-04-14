@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div className='mt-2 w-5/6 h- rounded-3xl absolute border-4 border-orange-900 border-double'></div>
+      <div className='mt-5 w-5/6 h-[87%] rounded-3xl absolute border-4 border-orange-900 border-double'></div>
     </div>
   )
 }
