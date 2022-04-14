@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
   return (
     <div className='w-full h-full bg-gradient-to-r from-orange-300 to-orange-200 flex justify-center'>
-      <div className='mt-10 w-5/6 h-5/6 rounded-3xl absolute border-4 border-orange-900 border-double'></div>
+      
       <div className='flex flex-col items-center'>
         <div className='mt-20 '>
           <Image
@@ -40,6 +40,8 @@ const Home: NextPage = () => {
           ))}
         </div>
       </div>
+
+      <div className='mt-2 w-5/6 h- rounded-3xl absolute border-4 border-orange-900 border-double'></div>
     </div>
   )
 }
