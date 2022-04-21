@@ -3,7 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import { AiOutlineInstagram, AiOutlineForm, AiOutlineWhatsApp } from 'react-icons/ai'
+import { AiOutlineInstagram, AiOutlineForm, AiOutlineWhatsApp,
+   AiOutlineCopyrightCircle, AiOutlineShareAlt } from 'react-icons/ai'
 
 const Home: NextPage = () => {
 
@@ -11,33 +12,40 @@ const Home: NextPage = () => {
 
   const links = [
     {name: 'Instagram', href: 'https://www.instagram.com/h_lysias/', icon: <AiOutlineInstagram className={iconClassName}/>},
-    {name: 'Formulário de Consulta', href: 'http://form.nutrilysias.com.br/', icon: <AiOutlineForm className={iconClassName}/>},
-    {name: 'Entre em contato', href: 'https://api.whatsapp.com/', icon: <AiOutlineWhatsApp className={iconClassName}/>},
+    {name: 'Consulta Online', href: 'https://wa.me/5521988878695', icon: <AiOutlineWhatsApp className={iconClassName}/>},
   ];
 
   return (
-    <div className='w-full h-full bg-gradient-to-r from-orange-300 to-orange-200 flex justify-center'>
-      
-      <div className='flex flex-col items-center'>
-        <div className='mt-20 '>
-          <Image
-            src='/HLLogov2.png'
-            alt='logo'
-            width={200}
-            height={200}
-            className='rounded-full'
-          />
+    <div className='w-full h-full bg-gradient-to-r from-orange-300 to-orange-200 overflow-auto flex justify-center'>
+      <div className='lg:w-[380px] lg:h-[680px] pt-12 lg:pb-8 mt-12 flex flex-col justify-center'>
+        <div className='flex grow flex-col items-center'>
+          <div>
+            <Image
+              src='/HLPhoto02.jpg'
+              alt='logo'
+              width={150}
+              height={150}
+              className='rounded-full'
+            />
+          </div>
+          <p className='mt-4 font-medium text-center text-black w-64'>Hanelle Lysias | Nutricionista</p>
+          <p className='text-sm'>CRN4: 22100538/P</p>
+          <p className='mt-4 font-serif font-medium text-center text-black/60 w-64'>&quot;Comece hoje o que te fará sentir orgulho amanhã&quot;</p>
+
+          <div className='mt-12 flex flex-col space-y-5'>
+            {links.map((obj, key) => (
+              <Link href={obj.href} key={key} passHref>
+                <button className="w-60 bg-gradient-to-r from-slate-100 to-white hover:bg-amber-500 text-black font-normal py-2 px-10 rounded-full text-center flex justify-between items-center">
+                  {obj.name} 
+                  {obj.icon}
+                </button>
+              </Link>
+            ))}
+          </div>
         </div>
 
-        <div className='mt-20 flex flex-col space-y-5'>
-          {links.map((obj, key) => (
-            <Link href={obj.href} key={key} passHref>
-              <button className="bg-amber-700 hover:bg-amber-500 text-white font-semibold py-2 px-4 rounded-full text-center flex justify-between items-center">
-                {obj.name} 
-                {obj.icon}
-              </button>
-            </Link>
-          ))}
+        <div className='flex justify-center pb-2 font-thin'>
+          2022 <AiOutlineCopyrightCircle className="w-6 mt-1"/> por Nutri Lysias
         </div>
       </div>
 
