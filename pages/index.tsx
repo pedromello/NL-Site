@@ -11,15 +11,15 @@ const Home: NextPage = () => {
   const iconClassName = 'ml-4 w-7 h-7';
 
   const links = [
-    {name: 'Instagram', href: 'https://www.instagram.com/h_lysias/', icon: <AiOutlineInstagram className={iconClassName}/>},
+    {name: 'Instagram', href: 'https://www.instagram.com/hanellelysias_nutri/', icon: <AiOutlineInstagram className={iconClassName}/>},
     {name: 'Consulta Online', href: 'https://wa.me/5521988878695', icon: <AiOutlineWhatsApp className={iconClassName}/>},
   ];
 
   return (
     <div className='w-full h-full bg-gradient-to-r from-orange-300 to-orange-200 overflow-auto flex justify-center'>
-      <div className='lg:w-[380px] lg:h-[680px] pt-12 lg:pb-8 mt-12 flex flex-col justify-center'>
+      <div className='lg:w-[380px] lg:h-[680px]  lg:pb-8 mt-12 flex flex-col justify-center'>
         <div className='flex grow flex-col items-center'>
-          <div>
+          <div className='w-[150px] h-[150px] p-1 rounded-full border-4 border-slate-100'>
             <Image
               src='/HLPhoto02.jpg'
               alt='logo'
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
           <div className='mt-12 flex flex-col space-y-5'>
             {links.map((obj, key) => (
               <Link href={obj.href} key={key} passHref>
-                <button className="w-60 bg-gradient-to-r from-slate-100 to-white hover:bg-amber-500 text-black font-normal py-2 px-10 rounded-full text-center flex justify-between items-center">
+                <button className="w-60 bg-gradient-to-r from-slate-100 to-white hover:from-slate-200 hover:to-slate-100 shadow text-black font-normal py-2 px-10 rounded-full text-center flex justify-between items-center">
                   {obj.name} 
                   {obj.icon}
                 </button>
