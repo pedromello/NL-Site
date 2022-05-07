@@ -17,6 +17,22 @@ const Home: NextPage = () => {
 
   return (
     <div className='w-full h-full bg-gradient-to-r from-slate-100 to-white overflow-auto flex justify-center'>
+      <Head>
+        <title>Nutricionista - Hanelle Lysias</title>
+        <meta name='description' content='Comece hoje o que te fará sentir orgulho amanhã. | Emagrecimento | Estética | Qualidade de vida' />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+        <meta property="og:title" content="Nutricionista - Hanelle Lysias" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.nutrilysias.com.br" />
+        <meta property="profile:first_name" content="Hanelle" />
+        <meta property="profile:last_name" content="Lysias" />
+        <meta property="profile:gender" content="female" />
+        <meta property="og:image" content="https://nutrilysias.com.br/_next/image?url=%2FHLPhoto02.jpg" />
+      
+        <meta name="twitter:card" content="summary">Comece hoje o que te fará sentir orgulho amanhã. | Emagrecimento | Estética | Qualidade de vida</meta>
+
+      </Head>
       <div className='lg:w-[380px] lg:h-[680px]  lg:pb-8 mt-12 flex flex-col justify-center'>
         <div className='flex grow flex-col items-center'>
           <div className='w-[150px] h-[150px] p-1 rounded-full border-4 border-rose-300'>
@@ -32,7 +48,7 @@ const Home: NextPage = () => {
             <Image className='object-none' src='/HLLogoSmall.png' alt='Small logo'
              width={300} height={300}/>
           </div>
-          <p className='z-20 mt-4 font-medium text-center text-black w-64'>Hanelle Lysias | Nutricionista</p>
+          <h1 className='z-20 mt-4 font-medium text-center text-black w-64'>Hanelle Lysias | Nutricionista</h1>
           <p className='z-20 text-sm'>CRN4: 22100538/P</p>
           <p className='mt-4 font-serif font-medium text-center text-black/60 w-64'>&quot;Comece hoje o que te fará sentir orgulho amanhã&quot;</p>
           
