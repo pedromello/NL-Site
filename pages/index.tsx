@@ -23,6 +23,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
         <meta property="og:title" content="Nutricionista - Hanelle Lysias" />
+        <meta property="og:description" content='Comece hoje o que te fará sentir orgulho amanhã. | Emagrecimento | Estética | Qualidade de vida' />
         <meta property="og:type" content="profile" />
         <meta property="og:url" content="https://www.nutrilysias.com.br" />
         <meta property="profile:first_name" content="Hanelle" />
