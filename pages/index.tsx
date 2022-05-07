@@ -29,8 +29,6 @@ const Home: NextPage = () => {
         <meta property="profile:last_name" content="Lysias" />
         <meta property="profile:gender" content="female" />
         <meta property="og:image" content="https://nutrilysias.com.br/_next/image?url=%2FHLPhoto02.jpg" />
-      
-        <meta name="twitter:card" content="summary">Comece hoje o que te fará sentir orgulho amanhã. | Emagrecimento | Estética | Qualidade de vida</meta>
 
       </Head>
       <div className='lg:w-[380px] lg:h-[680px]  lg:pb-8 mt-12 flex flex-col justify-center'>
