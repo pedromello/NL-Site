@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         <meta property="profile:first_name" content="Hanelle" />
         <meta property="profile:last_name" content="Lysias" />
         <meta property="profile:gender" content="female" />
-        <meta property="og:image" content="https://nutrilysias.com.br/_next/image?url=%2FHLPhoto02.jpg" />
+        <meta property="og:image" content="https://drive.google.com/file/d/1Pj1QqytO3kUDiFsTNfqUUp1Ksk8FFIGs/view?usp=sharing" />
 
       </Head>
       <div className='lg:w-[380px] lg:h-[680px]  lg:pb-8 mt-12 flex flex-col justify-center'>
