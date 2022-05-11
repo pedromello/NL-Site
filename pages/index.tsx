@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <meta property="profile:first_name" content="Hanelle" />
         <meta property="profile:last_name" content="Lysias" />
         <meta property="profile:gender" content="female" />
-        <meta property="og:image" content="https://nutrilysias.com.br/_next/image?url=%2FHLLogov3.png&w=400&q=100" />
+        <meta property="og:image" content="https://instagram.fsdu8-2.fna.fbcdn.net/v/t51.2885-15/161029919_800809083854707_3826061281414338865_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.fsdu8-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=-cY9Xz1btzoAX_9t72G&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=MjUzMTU5OTYyMzczNDI0Njc4Ng%3D%3D.2-ccb7-4&oh=00_AT9tReZi2xhwD4tyMsdQCaL_0SxAuLKBmm7OUFGBU2bmPA&oe=62816344&_nc_sid=30a2ef" />
 
       </Head>
       <div className='lg:w-[380px] lg:h-[680px]  lg:pb-8 mt-12 flex flex-col justify-center'>
