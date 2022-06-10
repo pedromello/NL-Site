@@ -69,8 +69,6 @@ const Home: NextPage = () => {
           2022 <AiOutlineCopyrightCircle className="w-6 mt-1"/> por Nutri Lysias
         </div>
       </div>
-
-      {/*<div className='mt-5 w-5/6 h-[87%] rounded-3xl absolute border-4 border-orange-900 border-double'></div>*/}
     </div>
   )
 }
