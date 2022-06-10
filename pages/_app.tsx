@@ -2,26 +2,16 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Script from 'next/script';
+import { useEffect } from 'react';
+import TagManager from 'react-gtm-module';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
-
+  useEffect(() => {
+    TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER || "" });
+  }, []);
   return(
     <>
-        <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
-
-        <Script strategy="afterInteractive">
-            {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-                page_path: window.location.pathname,
-                });
-            `}
-        </Script>
-
-
       <Component {...pageProps} />
     </>
   ); 

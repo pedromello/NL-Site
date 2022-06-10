@@ -54,7 +54,7 @@ const Home: NextPage = () => {
           <div className='mt-12 flex flex-col space-y-5'>
             {links.map((obj, key) => (
               <a href={obj.href} key={key} target="_blank" rel="noopener noreferrer">
-                <button className="w-60 bg-gradient-to-r from-rose-100 to-rose-50 hover:from-slate-200 hover:to-slate-100 shadow text-black font-normal py-2 px-10 rounded-full text-center flex justify-between items-center">
+                <button id={`id-${obj.name}`} className="w-60 bg-gradient-to-r from-rose-100 to-rose-50 hover:from-slate-200 hover:to-slate-100 shadow text-black font-normal py-2 px-10 rounded-full text-center flex justify-between items-center">
                   {obj.name} 
                   {obj.icon}
                 </button>
